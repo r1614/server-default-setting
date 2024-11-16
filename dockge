@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mkdir -p /opt/stacks /opt/dockge
+
+cd /opt/dockge
+
+wget https://raw.githubusercontent.com/louislam/dockge/master/compose.yaml > /dev/null 2>&1
+
+docker compose up -d
+
+exit
